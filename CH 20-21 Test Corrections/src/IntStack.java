@@ -18,15 +18,16 @@ public class IntStack {
 	}
 	
 	public boolean isEmpty(){
-		
+		return (sp==0);
 	}
 	
-	public void push(){
-		
+	public void push(int num){
+		items[sp] = num;
+		sp++;
 	}
 	
 	public int pop(){
-		
+		return items[--sp];
 	}
 	
 }
